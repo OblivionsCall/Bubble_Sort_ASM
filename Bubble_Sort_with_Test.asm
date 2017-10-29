@@ -1,3 +1,25 @@
+#################################################################################
+#
+#	Bubble Sort Function for an array of integers - Example Program
+#	OblivionsCall (Chris Hand)
+#	
+#	This program initializes an unsorted array, prints it, sorts it,
+#	then prints the sorted array.
+#
+#	Use:
+#		Bubble_Sort_Function
+#	 		$a0 - Array to be sorted
+# 			$a1 - Integer length of array (Number of elements)
+# 			$v0 - Sorted Array
+#
+#		Print_Loop
+#			$a0 - Array to be printed
+#			$a1 - Integer length of array (Number of elements)
+#
+#	Registers $t0-9 are used and not saved
+#
+################################################################################
+
 .data
 	array: .word 3, 15, 1, 12, 5
 	length: .word 5
@@ -87,12 +109,7 @@
 		
 		
 		
-	Bubble_Sort_Function:
-	# $a0 - Array to be sorted
-	# $a1 - Integer length of array (Number of elements)
-	# $v0 - Sorted Array
-	# This is an implementation of a simple Bubble Sort in MIPS Assembly, $t0-9 registers are used and not saved
-	
+	Bubble_Sort_Function:	
 	# Move array to $t0 and set maximum for 'i'
 	move $t0, $a0
 	addi $t3, $a1, -1
