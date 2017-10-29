@@ -9,7 +9,7 @@
 	move $t0, $a0
 	addi $t3, $a1, -1
 	
-	# Set up for 'i', Offset initialized at 0
+	# Set up for 'i', initialized with full array
 	li $t7, 0
 	move $t5, $t0
 	
